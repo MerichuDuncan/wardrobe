@@ -1,0 +1,78 @@
+﻿@model wardrobe.Models.Wardrobe
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Wardrobe</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.LabelFor(model => model.Name, " Look name")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+       
+        <dt>
+            @Html.DisplayNameFor(model => model.Occasion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Occasion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Season)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Season)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.Top.TopStyle, "Top")
+
+        </dt>
+        <dd>
+            <img src="@Url.Content("~/Content/summertop.jpg")" width="200" height="200" />
+
+        </dd>
+        <dt>
+            @Html.LabelFor(model => model.Bottom.BottomStyle, "Bottom")
+        </dt>
+
+        <dd>
+            <img src="@Url.Content("~/Content/shorts.jpg")" width="200" height="200" />
+
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.Sho.ShoeStyle, "Style")
+        </dt>
+
+        <dd>
+            <img src="@Url.Content("~/Content/converseshoes.jpg")" width="200" height="200" />
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.Accessory.NameofAccessories, "Accessories")
+        </dt>
+
+        <dd>
+            <img src="@Url.Content("~/Content/Applewatch.jpg")" width="200" height="200" />
+
+        </dd>
+
+      
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.WardrobeID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

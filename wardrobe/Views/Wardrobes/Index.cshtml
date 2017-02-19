@@ -1,0 +1,30 @@
+﻿@model IEnumerable<wardrobe.Models.Wardrobe>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<div class="container-fluid">
+    <div class="row ">
+
+        @foreach (var item in Model)
+        {
+            <div class="col-md-12">
+                <div class="thumbnail">
+                    <div class="caption">
+                        <h4>Name: @Html.DisplayFor(model => item.Name)</h4>
+                        <h5>@Html.DisplayFor(model => item.Season)</h5>
+                        <h5>@Html.DisplayFor(model => item.Occasion)</h5>                  
+                        <p> @Html.ActionLink("Details", "Details", new { id = item.WardrobeID }, new { @class = "btn btn-primary", role = "button" })</p>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+

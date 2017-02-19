@@ -1,0 +1,57 @@
+﻿@model IEnumerable<wardrobe.Models.Accessories>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<div class="container-fluid">
+    <div class="row ">
+
+        @foreach (var item in Model)
+        {
+            <div class="col-md-12">
+                <div class="thumbnail">
+                    <div class="caption">
+                        <h4>Name: @Html.DisplayFor(model => item.NameofAccessories)</h4>
+                        <img src="@Url.Content("~/Content/Applewatch.jpg")" width="200" height="200"/>
+                        <p> @Html.ActionLink("Details", "Details", new { id = item.AccessoriesID }, new { @class = "btn btn-primary", role = "button" })</p>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+@*<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.NameofAccessories)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Photo)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.NameofAccessories)
+        </td>
+        <td>
+            <img src="@Url.Content("~/Content/Applewatch.jpg")"/>
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.AccessoriesID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.AccessoriesID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.AccessoriesID })
+        </td>
+    </tr>
+}
+
+</table>*@
