@@ -2,7 +2,7 @@
     background-image: url('background.jpg');
     padding-top: 50px;
     padding-bottom: 20px;
-    
+    color: black !important;
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -27,7 +27,7 @@ textarea {
 .navbar-default{
     border: double 20px hotpink;
     background-color: transparent;
-    color: black;
+    color: black !important;
     font-size:larger;
     font-weight:bold;
 }

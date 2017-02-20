@@ -39,7 +39,22 @@
 
         </dt>
         <dd>
-            <img src="@Url.Content("~/Content/summertop.jpg")" width="200" height="200" />
+
+            @if (Model.Top.Photo == "Summer")
+            {
+                <p>I love <strong>Summer</strong>! One of my favorite tops to wear is a panda shirt</p>
+                            <img src="@Url.Content("~/Content/summertop.jpg")" width="200" height="200" />
+            }
+            @if (Model.Top.Photo == "yellow")
+            {
+                <p><strong>Yellow</strong> is one of my favorite color and if I have to go somewhere uncomfortable, I will wear the most comfortable color!</p>
+                            <img src="@Url.Content("~/Content/yellowtops.jpg")" width="200" height="200" />
+            }
+            @if (Model.Top.Photo == "gray")
+            { 
+                <p><strong>Gray</strong> is my to go color, I can wear any Shoes or Accessories with gray. Gray always saves me time every morning. </p>
+                            <img src="@Url.Content("~/Content/graytops.jpg")" width="200" height="200" />
+            }
 
         </dd>
         <dt>
@@ -47,7 +62,18 @@
         </dt>
 
         <dd>
-            <img src="@Url.Content("~/Content/shorts.jpg")" width="200" height="200" />
+            @if (Model.Bottom.Photo.ToLower() == "skirt")
+            {
+                <img src="@Url.Content("~/Content/1497206.jpg")" width="200" height="200" />
+            }
+            @if (Model.Bottom.Photo.ToLower() == "shorts")
+            {
+                <img src="@Url.Content("~/Content/shorts.jpg")" width="200" height="200" />
+            }
+            @if (Model.Bottom.Photo.ToLower() == "jeans")
+            {
+                <img src="@Url.Content("~/Content/jeans.jpg")" width="200" height="200" />
+            }
 
         </dd>
 
@@ -56,7 +82,18 @@
         </dt>
 
         <dd>
-            <img src="@Url.Content("~/Content/converseshoes.jpg")" width="200" height="200" />
+            @if (Model.Sho.Photo.ToLower() == "athletic")
+            {
+                <img src="@Url.Content("~/Content/converseshoes.jpg")" width="200" height="200" />
+            }
+            @if (Model.Sho.Photo.ToLower() == "flats")
+            {
+                <img src="@Url.Content("~/Content/flatshoes.jpg")" width="200" height="200" />
+            }
+            @if (Model.Sho.Photo.ToLower() == "boots")
+            {
+                <img src="@Url.Content("/Content/boots2.jpg")" width="200" height="200" />
+            }
         </dd>
 
         <dt>
@@ -64,7 +101,18 @@
         </dt>
 
         <dd>
-            <img src="@Url.Content("~/Content/Applewatch.jpg")" width="200" height="200" />
+            @if (Model.Accessory.Photo.ToLower() == "watch")
+            {
+                <img src="@Url.Content("~/Content/Applewatch.jpg")" width="200" height="200" />
+            }
+            @if (Model.Accessory.Photo.ToLower() == "eyeglass")
+            {
+                <img src="@Url.Content("~/Content/sunglass.jpg")" width="200" height="200" />
+            }
+            @if (Model.Accessory.Photo.ToLower() == "purse")
+            {
+                <img src="@Url.Content("~/Content/purse2.jpg")" width="200" height="200" />
+            }
 
         </dd>
 

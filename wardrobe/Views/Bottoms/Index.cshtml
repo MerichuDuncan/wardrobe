@@ -14,11 +14,22 @@
 
         @foreach (var item in Model)
         {
-            <div class="col-md-12">
+            <div class="col-md-4">
                 <div class="thumbnail">
                     <div class="caption">
                         <h4>@Html.DisplayFor(model => item.BottomStyle)</h4>
+                        @if(item.Photo.ToLower() == "skirt")
+                        {
+                          <img src="@Url.Content("~/Content/1497206.jpg")" width="200" height="200"/>
+                        }
+                        @if(item.Photo.ToLower() == "shorts")
+                        {
                         <img src="@Url.Content("~/Content/shorts.jpg")" width="200" height="200"/>
+                        }
+                        @if(item.Photo.ToLower()=="jeans")
+                        {
+                            <img src="@Url.Content("~/Content/jeans.jpg")" width="200" height="200"/>
+                        }
                         <p> @Html.ActionLink("Details", "Details", new { id = item.BottomsID }, new { @class = "btn btn-primary", role = "button" })</p>
                     </div>
                 </div>

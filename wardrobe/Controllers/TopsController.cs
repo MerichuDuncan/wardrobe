@@ -33,10 +33,7 @@ namespace wardrobe.Controllers
             {
                 return HttpNotFound();
             }
-            if (top.Photo=="Summer")
-            {
-                ViewBag.AddPhoto = Url.Content("/Content/summertop.jpg");
-            }
+          
             return View(top);
         }
 
