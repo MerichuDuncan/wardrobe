@@ -46,4 +46,9 @@ textarea {
     background-position: top;
     margin: 20px;
     color: black !important;
+    text-align:center;
+}
+.frontpage{
+    background-color:white;
+    border: dotted 10px black;
 }
