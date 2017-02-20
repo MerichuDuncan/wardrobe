@@ -47,8 +47,15 @@ textarea {
     margin: 20px;
     color: black !important;
     text-align:center;
+   
+    
 }
 .frontpage{
     background-color:white;
     border: dotted 10px black;
+    margin-top: 10px;
+}
+h2{
+    font-weight: bolder;
+   
 }

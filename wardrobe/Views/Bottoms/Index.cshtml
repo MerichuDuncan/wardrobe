@@ -18,17 +18,17 @@
                 <div class="thumbnail">
                     <div class="caption">
                         <h4>@Html.DisplayFor(model => item.BottomStyle)</h4>
-                        @if(item.Photo.ToLower() == "skirt")
+                        @if (item.Photo.ToLower() == "skirt")
                         {
-                          <img src="@Url.Content("~/Content/1497206.jpg")" width="200" height="200"/>
+                            <img src="@Url.Content("~/Content/1497206.jpg")" width="200" height="200" />
                         }
-                        @if(item.Photo.ToLower() == "shorts")
+                        @if (item.Photo.ToLower() == "shorts")
                         {
-                        <img src="@Url.Content("~/Content/shorts.jpg")" width="200" height="200"/>
+                            <img src="@Url.Content("~/Content/shorts.jpg")" width="200" height="200" />
                         }
-                        @if(item.Photo.ToLower()=="jeans")
+                        @if (item.Photo.ToLower() == "jeans")
                         {
-                            <img src="@Url.Content("~/Content/jeans.jpg")" width="200" height="200"/>
+                            <img src="@Url.Content("~/Content/jeans.jpg")" width="200" height="200" />
                         }
                         <p> @Html.ActionLink("Details", "Details", new { id = item.BottomsID }, new { @class = "btn btn-primary", role = "button" })</p>
                     </div>
@@ -37,32 +37,3 @@
         }
     </div>
 </div>
-
-@*<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.BottomStyle)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Photo)
-        </th>
-        <th></th>
-    </tr>
-
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.BottomStyle)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Photo)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.BottomsID }) |
-            @Html.ActionLink("Details", "Details", new { id=item.BottomsID }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.BottomsID })
-        </td>
-    </tr>
-}
-
-</table>*@

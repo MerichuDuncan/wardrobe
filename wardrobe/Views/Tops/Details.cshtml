@@ -20,10 +20,12 @@
 
         <dt>
             @Html.DisplayNameFor(model => model.Photo)
-          
+
         </dt>
 
         <dd>
+            <!--I created an if statement on my image to show different images for the user-->
+
             @if (Model.Photo == "Summer")
             {
                 <p>I love <strong>Summer</strong>! One of my favorite tops to wear is a panda shirt</p>

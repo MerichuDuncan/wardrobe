@@ -8,31 +8,32 @@
     @Scripts.Render("~/bundles/modernizr")
 </head>
 <body>
+   
     <div class="container body-content">
         @RenderBody()
-        <hr />
-        <div class="navbar navbar-default">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                @Html.ActionLink("Home", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Wardrobes", "Index", "Wardrobes")</li>
-                    <li>@Html.ActionLink("Tops", "Index", "Tops")</li>
-                    <li>@Html.ActionLink("Bottoms", "Index", "Bottoms")</li>
-                    <li>@Html.ActionLink("Shoes", "Index", "Shoes")</li>
-                    <li>@Html.ActionLink("Accessories", "Index", "Accessories")</li>
-                </ul>
+        <!--I want my navbar to be at the bottom of the page so it doesn't look bootstappy-->
+        <div class="navbar navbar-default navbar-fixed-side">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    @Html.ActionLink("Home", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li>@Html.ActionLink("Wardrobes", "Index", "Wardrobes")</li>
+                        <li>@Html.ActionLink("Tops", "Index", "Tops")</li>
+                        <li>@Html.ActionLink("Bottoms", "Index", "Bottoms")</li>
+                        <li>@Html.ActionLink("Shoes", "Index", "Shoes")</li>
+                        <li>@Html.ActionLink("Accessories", "Index", "Accessories")</li>
+                    </ul>
+                </div>
             </div>
         </div>
-    </div>
-
+        <hr />
         <footer>
             <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
         </footer>

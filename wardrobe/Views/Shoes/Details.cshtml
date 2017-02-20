@@ -23,6 +23,8 @@
         </dt>
 
         <dd>
+            <!--I created an if statement on my image to show different images for the user-->
+
             @if (Model.Photo.ToLower() == "athletic")
             {
                 <img src="@Url.Content("~/Content/converseshoes.jpg")" width="200" height="200" />
@@ -36,7 +38,7 @@
                 <img src="@Url.Content("/Content/boots2.jpg")" width="200" height="200" />
             }
         <dd>
-       
+
         </dd>
     </dl>
 </div>
