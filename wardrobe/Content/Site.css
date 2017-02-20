@@ -4,6 +4,7 @@ body {
     padding-top: 50px;
     padding-bottom: 20px;
     color: black !important;
+    font-family:'Lucida Console'
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -44,4 +45,5 @@ textarea {
     background-image: url('bg.jpg');
     background-position: top;
     margin: 20px;
+    color: black !important;
 }

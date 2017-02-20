@@ -23,8 +23,18 @@
         </dt>
 
         <dd>
-            <img src="@Url.Content("~/Content/Applewatch.jpg")" width="200" height="200" />
-        </dd>
+            @if (Model.Photo.ToLower() == "watch")
+            {
+                <img src="@Url.Content("~/Content/Applewatch.jpg")" width="200" height="200" />
+            }
+            @if (Model.Photo.ToLower() == "eyeglass")
+            {
+                <img src="@Url.Content("~/Content/sunglass.jpg")" width="200" height="200" />
+            }
+            @if (Model.Photo.ToLower() == "purse")
+            {
+                <img src="@Url.Content("~/Content/purse2.jpg")" width="200" height="200" />
+            }        </dd>
 
     </dl>
 </div>

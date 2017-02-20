@@ -24,7 +24,21 @@
         </dt>
 
         <dd>
-            <img src="@Url.Content("~/Content/summertop.jpg")" width="200" height="200" />
+            @if (Model.Photo == "Summer")
+            {
+                <p>I love <strong>Summer</strong>! One of my favorite tops to wear is a panda shirt</p>
+                <img src="@Url.Content("~/Content/summertop.jpg")" width="200" height="200" />
+            }
+            @if (Model.Photo == "yellow")
+            {
+                <p><strong>Yellow</strong> is one of my favorite color and if I have to go somewhere uncomfortable, I will wear the most comfortable color!</p>
+                <img src="@Url.Content("~/Content/yellowtops.jpg")" width="200" height="200" />
+            }
+            @if (Model.Photo == "gray")
+            {
+                <p><strong>Gray</strong> is my to go color, I can wear any Shoes or Accessories with gray. Gray always saves me time every morning. </p>
+                <img src="@Url.Content("~/Content/graytops.jpg")" width="200" height="200" />
+            }
         </dd>
 
     </dl>
