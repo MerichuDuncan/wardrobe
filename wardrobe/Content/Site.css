@@ -1,4 +1,5 @@
-﻿body {
+﻿/*Body*/
+body {
     background-image: url('background.jpg');
     padding-top: 50px;
     padding-bottom: 20px;
@@ -24,13 +25,23 @@ select,
 textarea {
     max-width: 280px;
 }
-.navbar-default{
-    border: double 20px hotpink;
-    background-color: transparent;
+/*My navbar where I inserted a background as well*/
+.navbar-default {
+    background-image: url('pinkbg.jpg');
+    border: groove 10px hotpink;
     color: black !important;
-    font-size:larger;
-    font-weight:bold;
+    font-size: larger;
+    font-weight: bold;
 }
+/*Setting the photo of my thumbnail*/
 .thumbnail{
+    border: groove 10px hotpink;
+}
 
+/*Style for my heading from my HOMEPAGE*/
+.panel-heading {
+    border: groove 20px hotpink;
+    background-image: url('bg.jpg');
+    background-position: top;
+    margin: 20px;
 }

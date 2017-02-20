@@ -202,6 +202,7 @@
     <Content Include="Content\1497206.jpg" />
     <Content Include="Content\Applewatch.jpg" />
     <Content Include="Content\background.jpg" />
+    <Content Include="Content\bg.jpg" />
     <Content Include="Content\boots.jpg" />
     <Content Include="Content\boots2.jpg" />
     <Content Include="Content\bootstrap-theme.css" />
@@ -213,6 +214,7 @@
     <Content Include="Content\graytops.jpg" />
     <Content Include="Content\hat.jpeg" />
     <Content Include="Content\jeans.jpg" />
+    <Content Include="Content\pinkbg.jpg" />
     <Content Include="Content\purse2.jpg" />
     <Content Include="Content\shorts.jpg" />
     <Content Include="Content\skirt.jpg" />
